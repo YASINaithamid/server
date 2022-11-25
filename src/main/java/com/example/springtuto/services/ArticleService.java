@@ -58,12 +58,12 @@ public class ArticleService {
     public Article save(Article article) {
   
         String uri ="https://app.nativenotify.com/api/flutter/notification";
-        Notification notif=new Notification();
-        notif.setBigPictureURL(article.getArticlePhoto());
+        Notification notif=new Notification("1914","1NHip95VbKieTC0DfCcswi",article.getArticleTitle(),article.getArticleResume(),article.getArticlePhoto());
+       /*  notif.setBigPictureURL(article.getArticlePhoto());
         notif.setBody(article.getArticleResume());
         notif.setFlutterAppID("1914");
         notif.setTitle(article.getArticleTitle());
-        notif.setFlutterAppToken("1NHip95VbKieTC0DfCcswi");
+        notif.setFlutterAppToken("1NHip95VbKieTC0DfCcswi"); */
         String articleTitle=article.getArticleTitle();
         String artticleResume=article.getArticleResume();
         String artticlePhoto=article.getArticlePhoto();

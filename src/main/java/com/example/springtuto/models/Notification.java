@@ -1,25 +1,23 @@
 package com.example.springtuto.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
 public class Notification {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+   
     private String flutterAppID;
     
     private String flutterAppToken;
     private String title;
     private String body;
     private String bigPictureURL;
+    public Notification( ){}
+    public Notification( String _flutterAppID,String _flutterAppToken ,String _title, String _body, String _bigPictureURL){
+        flutterAppID=_flutterAppID;
+     flutterAppToken=_flutterAppToken;
+     title=_title;
+     body=_body;
+     bigPictureURL=_bigPictureURL;
+
+    }
 }
