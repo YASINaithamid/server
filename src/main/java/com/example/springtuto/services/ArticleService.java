@@ -72,7 +72,7 @@ public class ArticleService {
         notification.put("flutterAppToken", "1NHip95VbKieTC0DfCcswi");
         notification.put("title", articleTitle);
         notification.put("body", artticleResume);
-        notification.put("bigPictureURL", artticlePhoto);
+        notification.put("bigPictureURL",artticlePhoto);
         //System.out.println(notification);
         RestTemplate restTemplate=new RestTemplate();
         HashMap<String, String> request = new HashMap<String, String>(notification);

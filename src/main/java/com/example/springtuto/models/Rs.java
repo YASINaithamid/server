@@ -1,6 +1,7 @@
 package com.example.springtuto.models;
 
 import java.time.LocalDate;
+import java.time.ZonedDateTime;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -70,13 +71,20 @@ public class Rs {
     private String userRs;
 
     @Column(name = "dateinsertrs")
-    private LocalDate rsInsertDate;
+    private ZonedDateTime   rsInsertDate = ZonedDateTime.now();
 
     @Column(name = "daters")
     private LocalDate rsDate;
 
     @Column(name = "lienrs")
     private String rsLink;
+
+    @Column(name = "photolink")
+    private String photoLink;
+
+    @Column(name = "isflushn",columnDefinition = "boolean default false")
+    private Boolean isFlush;
+    
     @Column(name = "etatsmsrs")
     private Integer rsSmsState;
 
