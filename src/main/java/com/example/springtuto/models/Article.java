@@ -112,7 +112,7 @@ public class Article {
 
         @Column(name = "photoarticlev")
         private String articlePhoto;
-
+  //resume
         @Column(name = "resumearticlev")
         private String articleResume;
 
